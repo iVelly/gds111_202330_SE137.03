@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hide{
+            display:none;
+        }
+        /*
+        comment
+        */
+        h2{
+            font-size:12px;
+        }
+        body{
+            background-color:rgba(143, 12, 143, .5);
+        }
+        .video{
+            width: 640;
+            height: 720;
+        }
+        
+    </style>
+</head>
+<body>
+   <h1 class="header">Header</h1>
+   <hr>
+
+   <div id="nav">
+    <a href="#">bio</a> 
+    <a href="#">eduation</a> 
+    <a href="#">hobbies</a>
+     
+   </div>
+   <hr>
+
+   <div id="main">
+        <div id="bio" class="content">
+            <h2>Bio</h2>
+            <img class="original-image" src="images/Get_money.jpeg" alt="Original Image">
+            <img class="hover-image" src="images/Too_fly.JPG" alt="Hover Image">
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nam facilis quibusdam. Alias voluptatibus enim neque vero aspernatur corrupti, quisquam necessitatibus inventore id, iure repudiandae a iste suscipit aperiam unde.</p>
+        </div>
+        <div id="ed" class="content">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <a href="https://www.starearlycollege.org/#" target="_blank"> S.T.A.R. Early College </a>
+                </li>
+
+                <li>
+                    Slater Middle School
+                </li>
+
+                <li>
+                    Charles E. Shea Senior High School
+                </li>
+            </ul>
+        </div>
+        <hr>
+
+        <div id="hobbies" class="content">
+            <h2>Hobbies</h2>
+            <ol>
+                <li>
+                    Video Editing... <i>I'm a beginner so I suck</i>
+                </li>
+
+                <video class= video src="videos/Lul Glock v3.1.mp4"  controls></video>
+
+                <li>
+                    Photography
+                </li>
+                <img src="images/PVD_Birds1.JPG" alt="Hover Image">
+                <img src="images/PVD_Birds2.JPG" alt="Hover Image">
+
+                <li>
+                    Listening to music
+                </li>
+                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/september-rain-2020-remastered/1502445998?i=1502446010"></iframe>
+            </ol>
+            
+        </div>
+        
+   </div>
+   <hr>
+
+   <div id="footer" class="content">
+        <p>
+            ©2023 Levi "iizaya" Germeil | W1 Assignment
+        </p>
+   </div>
+
+    <script>
+        var a = document.querySelectorAll(`#nav a`);
+        
+        for(let i=0; i<a.length; i++)
+        {
+            a[i].addEventListener(`click`, function(e){
+                e.preventDefault();
+
+                var div = document.querySelectorAll(`.content`);
+
+                for(let i=0; i<div.length; i++)
+                {
+                    div[i].classList.add(`hide`);
+                }
+
+               div[i].classList.remove(`hide`);
+                
+            })
+        }
+
+      
+    </script>
+</body>
+</html>
