@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+*{
+
+}
+
+html,body{
+    height: 100%;
+    margin: 10;
+}
+
+html,body{
+    background-color: yellow;
+    background-image: url(images/Get_money.jpeg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    background-attachment: fixed;
+}
+div{
+    background: coral;
+    border: 2px solid;
+    //border-radius: 20px 50px 30px 10px;
+    //border-top-left-radius: 50px;
+    box-shadow: 0 0 20px black
+}
+
+#thing{
+
+}
+
+.classThing{
+
+}
+
+p{
+
+}
+
+p,div,h2{
+
+}
+
+
+a{
+    text-decoration:none;
+    text-shadow: 5px 5px 2px red;
+}
+
+a:link, a:visited, a:active{
+    color: black
+}
+a:hover{
+    color:peachpuff
+}
+
+a::after{
+    content:" THese are extra words"
+}
+
