@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+#main{
+    width: 200px;
+    height: 200px;
+
+    overflow:hidden;
+
+    background-color: brown;
+    color: aliceblue;
+    padding: 30px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:black;
+    margin: 50px;
+
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Levi Germeil">
+    <meta description="Biography Website| W1">
+    <title>You Don't Know Me</title>
+
+    <link rel="stylesheet" href="https://use.typekit.net/fmh7obw.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>     
+    </style>
+</head>
+<body>
+   <h1 class="header"> You Don't Know Me</h1>
+ 
+
+   <div class="navigation_div" id="nav">
+        <a href="#bio">Bio</a> 
+        <a href="#education">Eduation</a> 
+        <a href="#hobbies">Hobbies</a>  
+   </div>
+
+   
+
+   <div id="main">
+
+        <div id="bio" class="content">
+            <h2>Bio</h2>
+            <img class="main_images" class="left" src="images/Get_money.jpeg" alt="Original Image">
+            <img class="main_images" class="right" src="images/Too_fly.JPG" alt="Hover Image">
+            
+            <p>I was born  <u><b>February 2, 2004 in Brookly, New York</b></u>. Before the 2nd grade, I traveled to St. Martin and St. Thomas. I would attend school in St. Thomas for some time before returning back to the states then settling in New York until the 6th grade. 
+                My family and I would then move to Rhode Island.</p>
+    
+            <p>At the age of twelve I would develop an affinity for anime.</p>
+    
+            <p>Now in days I spend my time either working, playing video games on my PC, listening to Music, watching movies, capturing videos and pictures, and finally learning to edit them in <strong>After Effects or Lightroom</strong>.</p>        </div>
+        </div>
+       
+
+        <div id="ed" class="content">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <a href="https://www.starearlycollege.org/#" target="_blank"> S.T.A.R. Early College </a>
+                </li>
+
+                <li>
+                    Slater Middle School
+                </li>
+
+                <li>
+                    Charles E. Shea Senior High School
+                </li>
+            </ul>
+        </div>
+       
+
+        <div id="hobbies" class="content">
+            <h2>Hobbies</h2>
+            <ol>
+                <li>
+                    Listening to music
+                </li>
+                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/september-rain-2020-remastered/1502445998?i=1502446010"></iframe>
+                <li>
+                    Video Editing... <i>I'm a beginner so I suck</i>
+                </li>
+
+                <video class="video" src="videos/Lul Glock v3.1.mp4"  controls></video>
+
+                <li>
+                    Photography
+                </li>
+
+                <img class="PVDimages" src="images/PVD_Birds1.JPG" alt="Kennedy Plaza Buildings & Birds">
+                <img class="PVDimages" src="images/PVD_Birds2.JPG" alt=" Another Kennedy Plaza Buildings & Birds ">
+
+            </ol>
+            
+        </div>
+      
+        
+   </div>
+   
+
+   <div id="footer" class="content">
+        <p>
+            ©2023 Levi "iizaya" Germeil | W1 Assignment
+        </p>
+   </div>
+
+    <script>
+        var a = document.querySelectorAll(`#nav a`);
+        
+        for(let i=0; i<a.length; i++)
+        {
+            a[i].addEventListener(`click`, function(e){
+                e.preventDefault();
+
+                var div = document.querySelectorAll(`.content`);
+
+                for(let i=0; i<div.length; i++)
+                {
+                    div[i].classList.add(`hide`);
+                }
+
+               div[i].classList.remove(`hide`);
+                
+            })
+        }
+
+      
+    </script>
+</body>
+</html>
