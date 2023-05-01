@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a{
+            display: inline-block;
+            width: 100px;
+            height:30px;
+            background-color:black;
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">tab 1</a>
+        <a href="#">tab 2</a>
+    </nav>
+    <p> breadcrumb >> tab 1</p>
+    <script>
+        var a = document.querySelectorAll(`nav a`)
+        var p = document.querySelector(`p`)
+
+        for (let i =0; i< a.length; i++)
+        {
+            a[i].addEventListener (`click`, e=>{
+                e.preventDefault();
+
+                for (let i = 0; i< a.length; i++)
+                {
+                    a[i].style.backgroundColor = `#999`;
+                }
+
+                e.target.style.backgroundColor = `black`;
+                p.innerHTML = `breadcrumbs >> ${e.target.innerHTML}`;
+            })
+        }
+
+    </script>
+</body>
+</html>
