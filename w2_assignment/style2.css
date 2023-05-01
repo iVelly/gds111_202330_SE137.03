@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+/* Define the purple pastel color scheme */
+:root {
+  --primary-color: #8a5aaa; /* Main color for headings and links */
+  --secondary-color: #b0a2b0; /* Secondary color for background and accents */
+  --text-color: #333; /* Text color for body text */
+  --background-color: #f5f3f7; /* Background color */
+}
+
+.hide {
+  display:none;
+}
+
+div {
+  border-bottom: dashed;
+  border-color: white;
+}
+
+.header {
+  font-family: "totally-gothic-wide-caps", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 72px;
+  text-align: center;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  transition: 1ms;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.navigation_div {
+  font-family: "totally-gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  text-align: center;
+}
+
+.navigation_div {
+  display: inline-block;
+  padding: 20px 60px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border: 1px solid white;
+  border-radius: 20px;
+  text-decoration: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a:link {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+a:visited {
+  color: var(--text-color);
+}
+
+a:active {
+  color: var(--primary-color);
+}
+
+.header:hover {
+  color: var(--secondary-color);
+  transition: 2s;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: "totally-gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.video {
+  width: 640px;
+  height: 420px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  box-shadow: 0 0 8px black;
+  border-radius: 20px;
+}
+
+.main_images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  box-shadow: 0 0 8px black;
+  border-radius: 20px;
+}
+
+.PVDimages {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 10px;
+  background-color: var(--secondary-color);
+  box-shadow: 0 0 8px black;
+  border-radius: 20px;
+}
+
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  box-shadow: 0 0 8px black;
+  border-radius: 20px;
+}
