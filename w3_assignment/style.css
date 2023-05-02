@@ -4,13 +4,17 @@ html, body{
     height:100%; 
     margin:0px;
 }
+:root {
+    --primary-color: #8a5aaa; /* Main color for headings and links */
+    --secondary-color: #b0a2b0; /* Secondary color for background and accents */
+    --text-color: #333; /* Text color for body text */
     
+  }   
 main {
     display: grid;
     grid-template-areas:
     "h h h h h"
     "b b b b b"
-    
     "d d d e e"
     "f f f f f";
     color: brown;
@@ -31,11 +35,43 @@ header{
     background-color:aqua;
     grid-area:h;
 }
+.header {
+    font-family: "totally-gothic-wide-caps", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 72px;
+    text-align: center;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    transition: 1ms;
+    border: 1px solid white;
+    border-radius: 20px;
+  }
 nav{
     display: none;
     background-color:magenta;
     grid-area:n;
 }
+.navigation_div {
+    font-family: "totally-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    text-align: center;
+}
+.navigation_div {
+    display: inline-block;
+    padding: 20px 60px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: 1px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 #bio{
     background-color:rgb(255, 255, 0);
     grid-area:b; 
@@ -56,24 +92,36 @@ section{
     background-color:yellow;
     grid-area:s;
 }
+a:link {
+    color: var(--primary-color);
+  }
+  
+  a:hover {
+    color: var(--text-color);
+  }
+  
+  a:visited {
+    color: var(--text-color);
+  }
+  
+  a:active {
+    color: var(--primary-color);
+  }
+  
+  .header:hover {
+    color: var(--secondary-color);
+    transition: 2s;
+}
 
-/*Make a link a box*/
-nav a{
-    display:inline-block;
-    padding:20px;
-    border:1px solid black;
-    border-radius:20px;
-}
-nav a:link, nav a:visited{
-    background-color:bisque;
-    /*animates the color*/
-    transition: all 1s;
-}
-nav a:hover, nav a:active{
-    background-color:rgb(243, 12, 12);
-    /*animates the color*/
-    transition: all 1s;
-}
+h2 {
+    font-size: 36px;
+    font-family: "totally-gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: var(--text-color) ;
+  }
+  
 .main_images {
     height: 60%;
     width: 45%;
@@ -99,9 +147,8 @@ nav a:hover, nav a:active{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
-    
-    background-color: black;
+    background-color: var(--secondary-color);
+    padding: 10px;
     padding:10px;
     box-shadow:0 0 8px black;/*drop shadow*/
     border-radius: 20px 20px 20px 20px;
