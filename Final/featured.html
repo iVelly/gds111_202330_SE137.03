@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .jumbotron {
+      padding: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+    
+    .jumbotron img {
+      max-width: 50%;
+      display: block;
+      margin: 0 auto;
+      padding: 6px; /* Decreased padding */
+      background-color: #6B9ACF; /* Light navy blue color */
+      box-shadow: 0px 0px 8px black; /* Changed box shadow */
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light font-weight-bold" style="background-color: #6B9ACF; color: white;">
+      <a class="navbar-brand" href="#">iVelly's Final Stand</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="featured.html">Featured Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project.html">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Content -->
+  <main>
+    <!-- Featured Project -->
+    <div class="jumbotron">
+      <img src="images/W1_screenshot.png" alt="Featured Project Image" class="img-fluid">
+      <h1 class="display-4">Week 1 CSS Assignment</h1>
+      <p class="lead">Date: March 30, 2023</p>
+      <p>"This is where it all started for me. I would've never I'd be able to make a project like this. Like ever!"</p>
+      <p>
+        <a href="https://gds111-germeil-202330.netlify.app/w1_assignment/index.html" class="btn btn-primary" target="_blank">View Project</a>
+        <a href="https://github.com/iVelly/gds111_202330_SE137.03/tree/main/w1_assignment" class="btn btn-secondary" target="_blank">GitHub Repository</a>
+      </p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-auto py-3" style="background-color: #6B9ACF; color: white;">
+    <div class="container text-center">
+      <span class="font-weight-bold">&copy; 2023 Levi "iVelly" Germeil. All rights reserved.</span>
+      <a href="your-figma-link" class="ml-3">Figma Prototype</a>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

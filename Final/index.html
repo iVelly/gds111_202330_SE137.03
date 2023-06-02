@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .jumbotron {
+      padding: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+    
+    .jumbotron img {
+    max-width: 25%;
+    display: block;
+    margin: 0 auto;
+    padding: 15px; /* Add padding */
+    background-color: #6B9ACF; /* Light navy blue color */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add box shadow */
+    border-radius: 20px;
+    }
+
+    
+    .social-icons {
+      margin-top: 20px;
+    }
+    
+    .social-icons a {
+      display: inline-block;
+      width: 96px;
+      height: 96px;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      margin-right: 15px;
+    }
+    
+    .social-icons a.facebook {
+      background-position: 0 0;
+    }
+    
+    .social-icons a.twitter {
+      background-position: -32px 0;
+      
+    }
+    
+    .social-icons a.linkedin {
+      background-position: -64px 0;
+    }
+    
+    .social-icons a.github {
+      background-position: -96px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light font-weight-bold" style="background-color: #6B9ACF;">
+      <a class="navbar-brand font-weight-bold" href="#">iVelly's Final Stand</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="featured.html">Featured Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project.html">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- Content -->
+  <main>
+    <!-- Featured Project -->
+    <div class="jumbotron">
+      <img src="images\software_engineer_anime_cartoon_poc_teen.jpg" alt="Project Image" class="img-fluid">
+      <h1 class="display-4">iVelly's Final Stand</h1>
+      <p class="lead">iVelly's Final Stand is a web development project created by a passionate 19-year-old college student and first-generation Haitian student. iVelly is determined to make an impact in the tech industry. This project showcases iVelly's skills in front-end development and serves as a testament to their pursuit of a software engineering degree.</p>
+      <p>With a focus on creating engaging and user-friendly web experiences, iVelly's Final Stand combines captivating visuals, intuitive navigation, and seamless interactions. The project demonstrates iVelly's dedication to crafting dynamic and responsive websites that leave a lasting impression on users.</p>
+      <p>Through the project's implementation, iVelly explores various front-end technologies, including HTML, CSS, and JavaScript, to deliver a compelling user interface. Leveraging their GitHub repository (available at <a href="https://github.com/iVelly/gds111_202330_SE137.03">https://github.com/iVelly/gds111_202330_SE137.03</a>), iVelly showcases their code expertise and commitment to continuous learning and improvement.</p>
+      <hr class="my-4">
+      <p>Join iVelly on this journey as they strive to transform their passion for software engineering into a successful front-end developer career. Experience the innovative vision and technical skills displayed in iVelly's Final Stand, leaving you inspired and excited for the future of web development.</p>
+      
+      <!-- Social Media Links -->
+      <div class="social-icons">
+        <a href="https://facebook.com/" class="facebook" target="_blank"><img src="images/meta-logo.png" alt="Facebook Logo" ></a>
+        <a href="https://twitter.com/" class="twitter" target="_blank"><img src="images/twitter.png" alt="Facebook Logo"></a>
+        <a href="https://linkedin.com/" class="linkedin" target="_blank"><img src="images/Linkedin-logo.png" alt="Facebook Logo"></a>
+        <a href="https://github.com/" class="github" target="_blank"><img src="images/github.png" alt="Facebook Logo"></a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-auto py-3" style="background-color: #6B9ACF; color: white;">
+    <div class="container text-center">
+      <span class="font-weight-bold">&copy; 2023 Levi "iVelly" Germeil. All rights reserved.</span>
+      <a href="your-figma-link" class="ml-3">Figma Prototype</a>
+    </div>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
